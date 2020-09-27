@@ -1,0 +1,100 @@
+li {
+    list-style-type: none;
+  }
+  body {
+    padding-top: 25px;
+    padding-left: 25px;
+    font-family: "Raleway", sans-serif;
+  }
+  h1 {
+    text-align: left;
+  }
+  h4 {
+    text-align: left;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  ul {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: -40px;
+    position: relative;
+  }
+  
+  div.col.col-centered {
+    text-align: center;
+  }
+  
+  .row {
+    justify-content: center;
+  }
+  
+  .class {
+    position: relative;
+    left: 135px;
+    top: -25px;
+    font-size: 20px;
+  }
+  .container {
+    text-align: center;
+  }
+  .card-small {
+    left: -15px;
+    border: 2px #24a2b8 solid;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  .weather-emoji {
+    font-size: 45px;
+  }
+  .current-city {
+    font-size: 35px;
+  }
+  .current-time {
+    font-size: 15px;
+  }
+  .current-emoji {
+    position: relative;
+  }
+  .card {
+    max-width: 50%;
+    padding-top: 20px;
+  }
+  
+  .form-control {
+    max-width: 500px;
+  }
+  
+  .units {
+    position: relative;
+    left: 25px;
+    top: -50px;
+    font-size: 20px;
+  }
+  #current-temp {
+    font-size: 65px;
+  }
+  #desc {
+    font-size: 15px;
+    text-align: center;
+  }
+  #details {
+    padding-top: 35px;
+  }
+  
+  #days {
+    color: #24a2b8;
+    text-align: center;
+    position: relative;
+  }
+  
