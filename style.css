@@ -30,6 +30,12 @@ li {
   div.col.col-centered {
     text-align: center;
   }
+
+  footer{
+text-align: left;
+font-size: 10px;
+position: relative;
+  }
   
   .row {
     justify-content: center;
