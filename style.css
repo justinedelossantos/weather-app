@@ -36,7 +36,7 @@ text-align: left;
 font-size: 10px;
 position: relative;
   }
-  
+
   .row {
     justify-content: center;
   }
@@ -73,7 +73,7 @@ position: relative;
     position: relative;
   }
   .card {
-    max-width: 50%;
+    max-width: 600px;
     padding-top: 20px;
   }
   
