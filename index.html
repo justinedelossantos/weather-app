@@ -26,47 +26,77 @@
               autofocus="on"
               autocomplete="off"
               id="city-input"
-              class="form-control shadow-sm"
-            />
-            <button class="btn btn-info">Search</button>
+          
             
+            />
+            
+            <button class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg></button>
+           <button class= "btn btn-info"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-current-location" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="3" />
+              <circle cx="12" cy="12" r="8" />
+              <line x1="12" y1="2" x2="12" y2="4" />
+              <line x1="12" y1="20" x2="12" y2="22" />
+              <line x1="20" y1="12" x2="22" y2="12" />
+              <line x1="2" y1="12" x2="4" y2="12" />
+            </svg>
+          </button>
+            <button class="btn btn-info" id="unit-c" type="button" a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature-fahrenheit" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="6" cy="8" r="2" />
+              <line x1="13" y1="12" x2="18" y2="12" />
+              <path d="M20 6h-6a1 1 0 0 0 -1 1v11" />
+            </svg>
+          </button>
+          <button class="btn btn-info" id="unit-f" type="button" a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature-celsius" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="6" cy="8" r="2" />
+              <path d="M20 9a3 3 0 0 0 -3 -3h-1a3 3 0 0 0 -3 3v6a3 3 0 0 0 3 3h1a3 3 0 0 0 3 -3" />
+            </svg>
+          </button>
+          <div class="current-data">
+          <h4 class="current-date"> October 10, 2020</h4>
+          <h4 class="current-time"> 13:09</h4>
+        </div>
           </form>
         </div>
-        <hr />
+     
 
         <div class="container">
           <div class="row">
             <div class="col" id="chosen-city">
               <h1 class="current-city">Los Angeles</h1>
-              <h4 class="current-time">Saturday 13:09</h4>
-                  <ul>
+             
+              <h1 id="current-temp">80 </h1>
+               
+               
+            </div>
+          
+                <div class="col" id="now-icon">
+               
+
+                  <p class="current-emoji">
+                      <img src="https://img.icons8.com/color/96/000000/partly-cloudy-day.png"/>
+                  </p>
+                </div> 
+                  <div class="col" id="now-details">  
+                     <ul>
                     <li><strong>Humidity:</strong> 41%</li>
                     <li><strong>Wind:</strong> 2mph</li>
                     <li><strong>Pecipitation:</strong> 0%</li>
                     <li>High/Low</li>
-                  </ul>
-               
-            </div>
-            <div class="card-small" style="width: 18rem;">
-              <div class="card-body" >
-                <div class="row" id="current-card">
-                <div class="col" id="now">
-                <h1 id="current-temp">80 </h1>
-                  <span class="units"> <a href="#" id="fahrenheit-link" class="active">°F</a> |
-                  <a href="#" id="celsius-link"> °C</a></span>
-                </div> 
-                <div class="col" id="now-icon">
-                  <p class="current-emoji">
-                      <img src="https://img.icons8.com/color/96/000000/partly-cloudy-day.png"/>
-                  </p>
-                  <h3 id="desc">partly cloudy</h3>
-                  <div class="col"></div>
+                  </ul></div>
                 </div>
-            </div>
+            
               </div>
           </div>
-
-          <hr > <br >
+ 
           <div class="row" id="days">
 
             <div class="col">

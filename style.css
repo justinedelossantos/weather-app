@@ -1,3 +1,7 @@
+input:hover{
+  box-shadow: red;
+}
+
 li {
     list-style-type: none;
   }
@@ -6,6 +10,8 @@ li {
     padding-left: 25px;
     font-family: "Raleway", sans-serif;
   }
+
+
   h1 {
     text-align: left;
   }
@@ -54,50 +60,42 @@ position: relative;
   }
   .container {
     text-align: center;
+    padding: 55px;
   }
-  .card-small {
-    left: -15px;
-    border: 2px #24a2b8 solid;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    position: relative;
+ 
+  .current-data{
+    text-align: center;
   }
-  
   .weather-emoji {
-    font-size: 45px;
+    font-size: 35px;
   }
   .current-city {
-    font-size: 35px;
+    font-size: 25px;
   }
   .current-time {
     font-size: 15px;
   }
   .current-emoji {
-    position: fixed;
+    position: relative;
   }
   .card {
-    max-width: 600px;
+    max-width: 650px;
     padding-top: 20px;
   }
   
-  .form-control {
-    max-width: 500px;
-  }
+
   
-  .units {
-  position: absolute;
-    font-size: 13px;
+  #city-input{
+    width: 300px;
+    border: #24a2b8 0.5 auto;
+    
   }
+ 
+  
   #current-temp {
     font-size: 65px;
   }
-  #desc {
-    position: absolute;
-    font-size: 15px;
-    text-align: center;
-  }
+
   #details {
     padding-top: 35px;
   }
@@ -107,4 +105,3 @@ position: relative;
     text-align: center;
     position: relative;
   }
-  
