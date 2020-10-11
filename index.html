@@ -19,7 +19,7 @@
     <div class="card border-info mb-3">
       <div class="card-body">
         <div>
-          <form class="input-group">
+          <form id="search-form">
             <input
               type="search"
               placeholder="search bar"
@@ -30,7 +30,7 @@
             
             />
             
-            <button class="btn btn-info"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <button class="btn btn-info" type="submit"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <circle cx="10" cy="10" r="7" />
               <line x1="21" y1="21" x2="15" y2="15" />
@@ -61,8 +61,10 @@
             </svg>
           </button>
           <div class="current-data">
-          <h4 class="current-date"> October 10, 2020</h4>
-          <h4 class="current-time"> 13:09</h4>
+          <h4 id="current-date"> October 10, 2020  13:09</h4>
+      
+          <h4 id="description"> Partly sunny </h4>
+          <h2 id="current-city">Los Angeles</h1>
         </div>
           </form>
         </div>
@@ -71,7 +73,7 @@
         <div class="container">
           <div class="row">
             <div class="col" id="chosen-city">
-              <h1 class="current-city">Los Angeles</h1>
+             
              
               <h1 id="current-temp">80 </h1>
                
@@ -81,16 +83,19 @@
                 <div class="col" id="now-icon">
                
 
-                  <p class="current-emoji">
-                      <img src="https://img.icons8.com/color/96/000000/partly-cloudy-day.png"/>
+                  <p id="current-icon">
+                      <img src="http://openweathermap.org/img/wn/10d@2x.png "
+                      alt="Clear"
+                      id="icon"
+                      />
                   </p>
                 </div> 
                   <div class="col" id="now-details">  
                      <ul>
-                    <li><strong>Humidity:</strong> 41%</li>
-                    <li><strong>Wind:</strong> 2mph</li>
-                    <li><strong>Pecipitation:</strong> 0%</li>
-                    <li>High/Low</li>
+                    <li><strong >Humidity:</strong><span id= "humidity"> </span> %</li>
+                    <li><strong >Wind:</strong><span id= "wind"> </span> mph</li>
+                    <li><strong >Pecipitation:</strong><span id= "precipitation"> </span>%</li>
+                   
                   </ul></div>
                 </div>
             

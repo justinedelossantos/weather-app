@@ -1,7 +1,3 @@
-input:hover{
-  box-shadow: red;
-}
-
 li {
     list-style-type: none;
   }
@@ -65,15 +61,23 @@ position: relative;
  
   .current-data{
     text-align: center;
+    padding-top: 25px;
   }
   .weather-emoji {
     font-size: 35px;
   }
   .current-city {
-    font-size: 25px;
-  }
-  .current-time {
     font-size: 15px;
+    text-align: center;
+  }
+  #current-date {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #description{
+    font-size: 15px;
+    text-align: center;
   }
   .current-emoji {
     position: relative;
@@ -82,8 +86,6 @@ position: relative;
     max-width: 650px;
     padding-top: 20px;
   }
-  
-
   
   #city-input{
     width: 300px;
@@ -104,4 +106,17 @@ position: relative;
     color: #24a2b8;
     text-align: center;
     position: relative;
+  }
+
+  #humidity{
+    font-size: 15px;
+    
+  }
+  #wind{
+    font-size: 15px;
+    
+  }
+  #precipitation{
+    font-size: 15px;
+    
   }
