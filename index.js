@@ -34,8 +34,9 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  
   let dateElement = document.querySelector("#current-date");
-  let iconElement = document.querySelector("#current-icon");
+  let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -44,6 +45,7 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute("src", 
   `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -51,7 +53,7 @@ function displayTemperature(response) {
 }
 
 function displayForecast(response) {
-  let forecastElement = document.querySelector("#days");
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
 
@@ -71,7 +73,7 @@ function displayForecast(response) {
         <strong>
           ${Math.round(forecast.main.temp_max)}°
         </strong>
-        ${Math.round(forecast.main.temp_min)}°
+          ${Math.round(forecast.main.temp_min)}°
       </div>
     </div>
   `;
@@ -81,16 +83,16 @@ function displayForecast(response) {
 
 function search(city) {
   let apiKey = "22c3b8cc51bf5143d5bcfe04cd68c875";
-  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 
-  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function handleSubmit(event) {
   event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input").value;
+  let cityInputElement = document.querySelector("#city-input");
  search(cityInputElement.value);
 }
 

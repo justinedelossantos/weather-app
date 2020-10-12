@@ -45,7 +45,7 @@
               <line x1="2" y1="12" x2="4" y2="12" />
             </svg>
           </button>
-            <button class="btn btn-info" id="unit-c" type="button" a href="#">
+            <button class="btn btn-info" id="unit-f" type="button" a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature-fahrenheit" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <circle cx="6" cy="8" r="2" />
@@ -53,7 +53,7 @@
               <path d="M20 6h-6a1 1 0 0 0 -1 1v11" />
             </svg>
           </button>
-          <button class="btn btn-info" id="unit-f" type="button" a href="#">
+          <button class="btn btn-info" id="unit-c" type="button" a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature-celsius" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
               <circle cx="6" cy="8" r="2" />
@@ -69,74 +69,33 @@
           </form>
         </div>
      
-
-        <div class="container">
           <div class="row">
             <div class="col" id="chosen-city">
-             
-             
               <h1 id="current-temp">80 </h1>
-               
-               
             </div>
-          
-                <div class="col" id="now-icon">
-               
-
-                  <p id="current-icon">
-                      <img src="http://openweathermap.org/img/wn/10d@2x.png "
+                <div class="col" id="current-icon">
+                      <img src=" "
                       alt="Clear"
                       id="icon"
                       />
-                  </p>
                 </div> 
                   <div class="col" id="now-details">  
-                     <ul>
+                    
                     <li><strong >Humidity:</strong><span id= "humidity"> </span> %</li>
                     <li><strong >Wind:</strong><span id= "wind"> </span> mph</li>
-                    <li><strong >Pecipitation:</strong><span id= "precipitation"> </span>%</li>
-                   
-                  </ul></div>
+                  </div>
                 </div>
-            
-              </div>
+
           </div>
  
-          <div class="row" id="days">
-
-            <div class="col">
-              <h6>Monday</h6>
-              <div><img src="https://img.icons8.com/color/48/000000/sun.png"/></div>
-              <p class="daily-text">81°</p>
-            </div>
-            
-            <div class="col">
-              <h6>Tuesday</h6>
-              <div><img src="https://img.icons8.com/color/48/000000/sun.png"/></div>
-              <p class="daily-text">82°</p>
-            </div>
-            <div class="col ">
-              <h6>Wednesday</h6>
-              <div><img src="https://img.icons8.com/color/48/000000/sun.png"/></div>
-              <class="daily-text>84°</p>
-            </div>
-            <div class="col ">
-              <h6>Thursday</h6>
-              <div><img src="https://img.icons8.com/color/48/000000/sun.png"/></div>
-              <class="daily-text>86°</p>
-            </div>
-            <div class="col ">
-              <h6>Friday</h6>
-              <div><img src="https://img.icons8.com/color/48/000000/sun.png"/></div>
-              <class="daily-text>90°</p>
-            </div>
-          </div>
+          <div class="row weather-forecast" id="forecast"></div>
+        </div>
         </div>
       </div>
     </div>
     </div>
     <div class="footer-src">
-    <footer>open source code by Justine Delos Santos<a href="https://github.com/ohjust/weather-app"><img src="https://img.icons8.com/color/48/000000/github--v1.png"width="20" height="20"/> </a></footer>
+    <footer>open source code by Justine Delos Santos<a href="https://github.com/ohjust/weather-app"><img src="https://img.icons8.com/color/48/000000/github--v1.png" id="github-icon" width="20" height="20"/> </a></footer>
 </div>
  <script src="index.js"></script>
   </body>

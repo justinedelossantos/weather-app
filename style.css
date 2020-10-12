@@ -7,14 +7,21 @@ li {
     font-family: "Raleway", sans-serif;
   }
 
-
+}
   h1 {
     text-align: left;
   }
   h4 {
     text-align: left;
   }
-  
+
+  h6{
+    display: block;
+  }
+  img{
+    height: 48px;
+    width: 48px;
+  }
   div {
     display: block;
   }
@@ -22,12 +29,7 @@ li {
   button {
     margin-left: 10px;
   }
-  ul {
-    text-align: left;
-    margin-top: 50px;
-    margin-left: -40px;
-    position: relative;
-  }
+ 
   
   div.col.col-centered {
     text-align: center;
@@ -45,7 +47,7 @@ position: relative;
   }
 
   .row {
-    justify-content: center;
+    margin: 0 auto;
   }
   
   .class {
@@ -63,12 +65,14 @@ position: relative;
     text-align: center;
     padding-top: 25px;
   }
-  .weather-emoji {
-    font-size: 35px;
-  }
+  
   .current-city {
     font-size: 15px;
     text-align: center;
+  }
+  #icon{
+    height: 96px;
+    width: 96px;
   }
   #current-date {
     font-size: 15px;
@@ -90,33 +94,46 @@ position: relative;
   #city-input{
     width: 300px;
     border: #24a2b8 0.5 auto;
-    
   }
  
   
   #current-temp {
     font-size: 65px;
+    text-align: center;
+  }
+
+  #current-icon {
+    text-align: center;
+  }
+
+  #now-details {
+  padding-top: 30px;;
+    text-align: center;
   }
 
   #details {
     padding-top: 35px;
   }
   
-  #days {
+  #forecast {
     color: #24a2b8;
     text-align: center;
-    position: relative;
+    width: 100%;
   }
 
   #humidity{
     font-size: 15px;
-    
   }
+
   #wind{
     font-size: 15px;
-    
   }
+
   #precipitation{
     font-size: 15px;
-    
+  }
+
+  #github-icon{
+    width: 20px;
+    height: 20px;
   }
