@@ -96,6 +96,20 @@ function handleSubmit(event) {
  search(cityInputElement.value);
 }
 
+function handlePosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "22c3b8cc51bf5143d5bcfe04cd68c875";
+  let unit = "imperial";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${unit}`;
+  axios.get(apiUrl).then(getTemperature);
+}
+
+navigator.geolocation.getCurrentPosition(handlePosition)
+let getCurrentPosition = document.querySelector("#current");
+//make button clickable
+
+
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
